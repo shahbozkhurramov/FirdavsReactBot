@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   function toggleMenu(){
@@ -22,8 +23,10 @@ export default function Header() {
         </div>
         <nav className="nav-menu" id="nav-menu">
           <ul>
-            <li><a href="/firdavsreactbot">Kurslar</a></li>
-            <li><a href="/firdavsreactbot/contactus">Bog'lanish</a></li>
+            <li>
+              <Link to="/firdavsreactbot">Bosh sahifa</Link>
+            </li>
+            <li><Link to="/firdavsreactbot/contactus">Bog'lanish</Link></li>
           </ul>
         </nav>
     </div>
