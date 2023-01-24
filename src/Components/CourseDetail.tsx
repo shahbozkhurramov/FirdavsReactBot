@@ -1,9 +1,7 @@
 import React from 'react'
-import CourseList from '../Components/CourseList';
+import { useParams } from "react-router-dom";
 import { CourseModel } from '../Models/CourseModel';
-
-export default function Home() {
-  const courses: CourseModel[] = [
+const courses: CourseModel[] = [
     {
       id: 1,
       name: "Arab tili",
@@ -24,7 +22,13 @@ export default function Home() {
     }
   ]
 
-  return (
-        <CourseList courses={courses}/>
-  )
+export default function CourseDetail() {
+    let { id } = useParams<{ id: string }>();
+    const course = courses.find(course => course.id === Number(id));
+    return (
+    <div>
+      <h1>{course?.name}</h1>
+      <p>Course ID: {course?.id}</p>
+    </div>
+  );
 }
