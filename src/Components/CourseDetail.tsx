@@ -19,6 +19,12 @@ const courses: CourseModel[] = [
       name: "Kimyo",
       description: "Kimyo bilan tanishing",
       img: '../Images/arabic.jpg'
+    },
+    {
+      id: 3,
+      name: "Matematika",
+      description: "Matematika bilan tanishing",
+      img: '../Images/arabic.jpg'
     }
   ]
 

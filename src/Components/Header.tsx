@@ -4,13 +4,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
   function toggleMenu(){
     var menu = document.getElementById("nav-menu") as HTMLElement;
-    var closeBtn = document.getElementById("close-button") as HTMLElement;
     if (menu.style.display === "block") {
       menu.style.display = "none";
-      closeBtn.style.display = "none";
     } else {
       menu.style.display = "block";
-      closeBtn.style.display = "block";
     }
   }
   return (
@@ -24,9 +21,9 @@ export default function Header() {
         <nav className="nav-menu" id="nav-menu">
           <ul>
             <li>
-              <Link to="/firdavsreactbot">Bosh sahifa</Link>
+              <Link to="/firdavsreactbot" onClick={toggleMenu}>Kurslar</Link>
             </li>
-            <li><Link to="/firdavsreactbot/contactus">Bog'lanish</Link></li>
+            <li><Link to="/firdavsreactbot/contactus" onClick={toggleMenu}>Bog'lanish</Link></li>
           </ul>
         </nav>
     </div>
