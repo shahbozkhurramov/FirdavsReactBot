@@ -169,7 +169,7 @@
   }
 
   .menu-button {
-	display: none;
+	/* display: none; */
 	cursor: pointer;
   }
   
@@ -184,7 +184,7 @@
 	display: none;
 	position: absolute;
 	right: 29px;
-	top: 64px;
+	top: 70px;
 	background-color: #fff;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	border-radius: 4px;

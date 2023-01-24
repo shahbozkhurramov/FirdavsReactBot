@@ -22,8 +22,8 @@ export default function Header() {
         </div>
         <nav className="nav-menu" id="nav-menu">
           <ul>
-            <li><a href="/">Kurslar</a></li>
-            <li><a href="/contactus">Bog'lanish</a></li>
+            <li><a href="/firdavsreactbot">Kurslar</a></li>
+            <li><a href="/firdavsreactbot/contactus">Bog'lanish</a></li>
           </ul>
         </nav>
     </div>

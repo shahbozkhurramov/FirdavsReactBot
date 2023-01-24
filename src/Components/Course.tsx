@@ -9,7 +9,7 @@ export default function Course({course}: {course: CourseModel}) {
       <div className="course-info">
         <h3 className="course-title">{course.name}</h3>
         <div className="course-description">{course.description}</div>
-        <Link to={`/courseDetail/${course.id}`} className="course-info-button">Batafsil</Link>
+        <Link to={`/firdavsreactbot/courseDetail/${course.id}`} className="course-info-button">Batafsil</Link>
       </div>
     </div>
   );

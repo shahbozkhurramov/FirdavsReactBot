@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home';
@@ -12,9 +11,9 @@ function App() {
       <div className='app-container'>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/contactus" element={<Contactus/>}/>
-        <Route path='/courseDetail/:id' element={<CourseDetail/>}/>
+        <Route path="/firdavsreactbot" element={<Home/>}/>
+        <Route path="/firdavsreactbot/contactus" element={<Contactus/>}/>
+        <Route path='/firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
       </Routes>
       </div>
     </Router>
