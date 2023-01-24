@@ -23,7 +23,7 @@ export default function Home() {
       img: '../Images/arabic.jpg'
     },
     {
-      id: 3,
+      id: 4,
       name: "Matematika",
       description: "Matematika bilan tanishing",
       img: '../Images/arabic.jpg'

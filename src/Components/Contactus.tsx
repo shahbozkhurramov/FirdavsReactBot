@@ -31,26 +31,26 @@ export default function Contactus() {
 
     if(valid) {
         // redirect to home
-        window.location.href = "/";
+        window.location.href = "/firdavsreactbot";
     }
 
     return valid;
     }
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" data-aos="zoom-in-up" data-aos-duration="800">
       <form className="contact-form">
-          <h2 className="form-title">Biz bilan bog'laning</h2>
-          <div className="form-field">
+          <h2 className="form-title" data-aos="fade-down" data-aos-duration="2000">Biz bilan bog'laning</h2>
+          <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="name">Ismingiz:</label>
               <input type="text" id="name" name="name"/>
               <div className="error-message" id="nameError"></div>
           </div>
-          <div className="form-field">
+          <div className="form-field" data-aos="fade-up" data-aos-duration="3000">
               <label htmlFor="phone">Telefon raqamingiz:</label>
               <input type="tel" id="phone" name="phone"/>
               <div className="error-message" id="phoneError"></div>
           </div>
-          <div className="form-field message-field">
+          <div className="form-field message-field" data-aos="fade-up" data-aos-duration="3000">
               <label htmlFor="message">Xabar:</label>
               <textarea id="message" name="message"></textarea>
               <div className="error-message" id="messageError"></div>

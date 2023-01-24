@@ -17,22 +17,6 @@
 	max-height: 40px
   }
   
-  .contact-button {
-	background-color: rgb(11, 149, 159);
-	color: white;
-	padding: 10px 20px;
-	border-radius: 20px;
-	text-align: center;
-	font-weight: bold;
-	border: 0;
-	text-decoration: none;
-  }
-
-  .contact-button:hover {
-	background-color: rgb(26, 94, 204);
-	color: white;
-  }
-  
   .course-list {
 	background-color: #f1f1f1;
 	padding: 20px 10px;
@@ -73,9 +57,10 @@
 	background-color: rgb(11, 149, 159);
 	color: white;
 	position: absolute;
+	font-family: 'Times New Roman';
 	bottom: 0;
 	right: 0;
-	padding: 2px 5px;
+	padding: 3px 7px;
 	border-radius: 5px;
 	text-align: center;
 	border: 0;
@@ -189,19 +174,20 @@
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	border-radius: 4px;
 	padding: 16px;
-	width: 100px;
-	height: 40px;
+	width: 150px;
+	height: 70px;
 	z-index: 1;
   }
   
   .nav-menu ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin: 5px 5px;
+	padding: 5px 5px;
   }
   
   .nav-menu li {
 	margin-bottom: 8px;
+	font-size: 20px;
   }
   
   .nav-menu a {
@@ -212,7 +198,7 @@
   }
   
   .nav-menu a:hover {
-	color: #4CAF50;
+	color: #208523;
   }
   
   @media only screen and (max-width: 768px) {

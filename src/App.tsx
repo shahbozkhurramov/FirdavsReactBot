@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home';
 import Contactus from './Components/Contactus';
@@ -7,8 +7,7 @@ import CourseDetail from './Components/CourseDetail';
 
 function App() {
   return (
-    <Router>
-      <div className='app-container'>
+    <div className='app-container'>
       <Header/>
       <Routes>
         <Route path="/firdavsreactbot" element={<Home/>}/>
@@ -16,7 +15,6 @@ function App() {
         <Route path='/firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
       </Routes>
       </div>
-    </Router>
   );
 }
 

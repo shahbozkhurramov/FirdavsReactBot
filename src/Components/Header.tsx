@@ -20,9 +20,7 @@ export default function Header() {
         </div>
         <nav className="nav-menu" id="nav-menu">
           <ul>
-            <li>
-              <Link to="/firdavsreactbot" onClick={toggleMenu}>Kurslar</Link>
-            </li>
+            <li><Link to="/firdavsreactbot" onClick={toggleMenu}>Kurslar</Link></li>
             <li><Link to="/firdavsreactbot/contactus" onClick={toggleMenu}>Bog'lanish</Link></li>
           </ul>
         </nav>

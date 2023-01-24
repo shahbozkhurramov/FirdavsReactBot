@@ -32,7 +32,7 @@ export default function CourseDetail() {
     let { id } = useParams<{ id: string }>();
     const course = courses.find(course => course.id === Number(id));
     return (
-    <div>
+    <div data-aos="flip-right" data-aos-duration="1500">
       <h1>{course?.name}</h1>
       <p>Course ID: {course?.id}</p>
     </div>
