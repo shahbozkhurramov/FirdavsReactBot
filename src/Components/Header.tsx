@@ -14,7 +14,9 @@ export default function Header() {
   }
   return (
     <div className="app-header">
+      <Link to="firdavsreactbot">
       <img src={require('../Images/firdavs.jpg')} alt="App logo" className="app-logo" />
+      </Link>
       <nav id="nav" className="nav">
           <ul className="nav__menu" id="menu" tabIndex={-1} aria-label="main navigation" hidden>
             <li className="nav__item">
