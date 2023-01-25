@@ -10,9 +10,9 @@ function App() {
     <div className='app-container'>
       <Header/>
       <Routes>
-        <Route path="/firdavsreactbot" element={<Home/>}/>
-        <Route path="/firdavsreactbot/contactus" element={<Contactus/>}/>
-        <Route path='/firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
+        <Route path="firdavsreactbot" element={<Home/>}/>
+        <Route path="firdavsreactbot/contactus" element={<Contactus/>}/>
+        <Route path='firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
       </Routes>
       </div>
   );
