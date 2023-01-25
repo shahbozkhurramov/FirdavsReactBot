@@ -3,4 +3,5 @@ export interface CourseModel {
     name: string;
     description: string;
     img: string;
+    delayTime: number;
 }

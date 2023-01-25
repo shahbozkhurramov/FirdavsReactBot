@@ -10,21 +10,21 @@ export default function Contactus() {
 
     if(name.value === "") {
         var nameError = document.getElementById("nameError") as HTMLInputElement;
-        nameError.innerHTML = "Ismingizni kiriting";
+        nameError.innerHTML = "Ismingizni kiriting!";
         nameError.style.visibility = "visible";
         valid = false;
     }
 
     if(phone.value === "") {
         var phoneError = document.getElementById("phoneError") as HTMLInputElement;
-        phoneError.innerHTML = "Telefon raqamingizni kiriting";
+        phoneError.innerHTML = "Telefon raqamingizni kiriting!";
         phoneError.style.visibility = "visible";
         valid = false;
     }
 
     if(message.value === "") {
         var messageError = document.getElementById("messageError") as HTMLInputElement;
-        messageError.innerHTML = "Xabarni kiriting";
+        messageError.innerHTML = "Xabarni kiriting!";
         messageError.style.visibility = "visible";
         valid = false;
     }
@@ -39,18 +39,18 @@ export default function Contactus() {
   return (
     <div className="contact-form-container" data-aos="zoom-in-up" data-aos-duration="800">
       <form className="contact-form">
-          <h2 className="form-title" data-aos="fade-down" data-aos-duration="2000">Biz bilan bog'laning</h2>
-          <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
+          <h2 className="form-title" data-aos="fade-down" data-aos-duration="1500">Biz bilan bog'laning</h2>
+          <div className="form-field" data-aos="fade-up" data-aos-duration="1500">
               <label htmlFor="name">Ismingiz:</label>
               <input type="text" id="name" name="name"/>
               <div className="error-message" id="nameError"></div>
           </div>
-          <div className="form-field" data-aos="fade-up" data-aos-duration="3000">
+          <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="phone">Telefon raqamingiz:</label>
               <input type="tel" id="phone" name="phone"/>
               <div className="error-message" id="phoneError"></div>
           </div>
-          <div className="form-field message-field" data-aos="fade-up" data-aos-duration="3000">
+          <div className="form-field message-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="message">Xabar:</label>
               <textarea id="message" name="message"></textarea>
               <div className="error-message" id="messageError"></div>
