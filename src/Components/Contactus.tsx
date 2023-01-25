@@ -1,58 +1,70 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useNavigate } from "react-router-dom";
 
 export default function Contactus() {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate("/firdavsreactbot");
+    } 
+
+    const nameRef = useRef<HTMLInputElement>(null);
+    const phoneRef = useRef<HTMLInputElement>(null);
+    const messageRef = useRef<HTMLTextAreaElement>(null);
+
     function validateForm()
     {
-        var name = document.getElementById("name") as HTMLInputElement;
-        var phone = document.getElementById("phone") as HTMLInputElement;
-        var message = document.getElementById("message") as HTMLInputElement;
         var valid = true;
+        ChangeVisibility("nameError", "hidden");
+        ChangeVisibility("phoneError", "hidden");
+        ChangeVisibility("messageError", "hidden");
 
-    if(name.value === "") {
-        var nameError = document.getElementById("nameError") as HTMLInputElement;
-        nameError.innerHTML = "Ismingizni kiriting!";
-        nameError.style.visibility = "visible";
-        valid = false;
+        if(nameRef.current?.value === "") {
+            ChangeVisibility("nameError", "visible", "Ismingizni kiriting!");
+            valid = false;
+        }
+
+        if(phoneRef.current?.value === "") {
+            ChangeVisibility("phoneError", "visible", "Telefon raqamingizni kiriting!");
+            valid = false;
+        }
+
+        if(messageRef.current?.value === "") {
+            ChangeVisibility("messageError", "visible", "Xabaringizni kiriting!");
+            valid = false;
+        }
+
+        if(valid) {
+            ChangeVisibility("SuccessMessage", "visible", "Xabar yuborildi!");
+            ChangeVisibility("contact-form", "hidden")
+            setTimeout(navigateToHome, 2000);
+        }
     }
 
-    if(phone.value === "") {
-        var phoneError = document.getElementById("phoneError") as HTMLInputElement;
-        phoneError.innerHTML = "Telefon raqamingizni kiriting!";
-        phoneError.style.visibility = "visible";
-        valid = false;
+    function ChangeVisibility(id: string, visibility: string, message?: string) {
+        var element = document.getElementById(id) as HTMLInputElement;
+        element.innerHTML = message ?? "";
+        element.style.visibility = visibility;
     }
 
-    if(message.value === "") {
-        var messageError = document.getElementById("messageError") as HTMLInputElement;
-        messageError.innerHTML = "Xabarni kiriting!";
-        messageError.style.visibility = "visible";
-        valid = false;
-    }
-
-    if(valid) {
-        // redirect to home
-        window.location.href = "/firdavsreactbot";
-    }
-
-    return valid;
-    }
   return (
+    <>
     <div className="contact-form-container" data-aos="zoom-in-up" data-aos-duration="800">
-      <form className="contact-form">
+      <form className="contact-form" id='contact-form'>
           <h2 className="form-title" data-aos="fade-down" data-aos-duration="1500">Biz bilan bog'laning</h2>
           <div className="form-field" data-aos="fade-up" data-aos-duration="1500">
               <label htmlFor="name">Ismingiz:</label>
-              <input type="text" id="name" name="name"/>
+              <input type="text" id="name" ref={nameRef} name="name"/>
               <div className="error-message" id="nameError"></div>
           </div>
           <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="phone">Telefon raqamingiz:</label>
-              <input type="tel" id="phone" name="phone"/>
+              <input type="tel" id="phone" ref={phoneRef} name="phone"/>
               <div className="error-message" id="phoneError"></div>
           </div>
           <div className="form-field message-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="message">Xabar:</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" ref={messageRef} name="message"></textarea>
               <div className="error-message" id="messageError"></div>
           </div>
           <div className="form-field">
@@ -60,5 +72,7 @@ export default function Contactus() {
           </div>
       </form>
   </div>
+  <div className="success-message" id="SuccessMessage"></div>
+  </>
   )
 }
