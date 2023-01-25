@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [, forceUpdate] = useReducer(x => x + 1, 0);
   function toggleMenu(){
     const nav = document.querySelector('#nav') as HTMLElement;
     const menu = document.querySelector('#menu') as HTMLElement;
@@ -11,6 +12,7 @@ export default function Header() {
     menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
     menu.hidden = !isMenuOpen;
     nav.classList.toggle('nav--open');
+    forceUpdate();
   }
   return (
     <div className="app-header">
@@ -38,7 +40,6 @@ export default function Header() {
               </g>
             </svg>
           </button>
-          <div className="splash"></div>
         </nav>
     </div>
 
