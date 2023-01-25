@@ -1,8 +1,7 @@
-import React, { useReducer } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [, forceUpdate] = useReducer(x => x + 1, 0);
   function toggleMenu(){
     const nav = document.querySelector('#nav') as HTMLElement;
     const menu = document.querySelector('#menu') as HTMLElement;
@@ -12,7 +11,6 @@ export default function Header() {
     menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
     menu.hidden = !isMenuOpen;
     nav.classList.toggle('nav--open');
-    forceUpdate();
   }
   return (
     <div className="app-header">
@@ -26,6 +24,9 @@ export default function Header() {
             </li>
             <li className="nav__item">
               <Link to="/firdavsreactbot/contactus" className="nav__link" onClick={toggleMenu}>Bog'lanish</Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/firdavsreactbot/aboutus" className="nav__link" onClick={toggleMenu}>Biz haqimizda</Link>
             </li>
           </ul>
           <button className="nav__toggle" aria-expanded="false" aria-controls="menu" onClick={toggleMenu}>

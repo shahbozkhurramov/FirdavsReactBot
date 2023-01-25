@@ -5,6 +5,7 @@ import Contactus from './Components/Contactus';
 import Header from './Components/Header';
 import CourseDetail from './Components/CourseDetail';
 import NotFound from './Components/NotFound';
+import AboutUs from './Components/AboutUs';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/firdavsreactbot" element={<Home/>}/>
         <Route path="/firdavsreactbot/contactus" element={<Contactus/>}/>
+        <Route path="/firdavsreactbot/aboutus" element={<AboutUs/>}/>
         <Route path='/firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>

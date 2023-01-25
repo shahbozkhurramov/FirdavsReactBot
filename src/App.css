@@ -116,6 +116,7 @@
 	border: 2px solid rgb(32, 199, 177);
 	outline: none;
 	background-color: #ffffff;
+	display: block;
   }
   
   .message-field {
