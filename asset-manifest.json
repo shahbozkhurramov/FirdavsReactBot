@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/firdavsreactbot/static/css/main.633479f8.css",
-    "main.js": "/firdavsreactbot/static/js/main.b7fba324.js",
+    "main.css": "/firdavsreactbot/static/css/main.51682811.css",
+    "main.js": "/firdavsreactbot/static/js/main.b742b28d.js",
     "static/js/787.359b1849.chunk.js": "/firdavsreactbot/static/js/787.359b1849.chunk.js",
     "static/media/firdavs.jpg": "/firdavsreactbot/static/media/firdavs.fadd60ed74885e421a26.jpg",
     "static/media/arabic.jpg": "/firdavsreactbot/static/media/arabic.33db17102dad77ffeeb8.jpg",
     "static/media/contactus.jpg": "/firdavsreactbot/static/media/contactus.76b6b637a0c48a28f90b.jpg",
     "index.html": "/firdavsreactbot/index.html",
-    "main.633479f8.css.map": "/firdavsreactbot/static/css/main.633479f8.css.map",
-    "main.b7fba324.js.map": "/firdavsreactbot/static/js/main.b7fba324.js.map",
+    "main.51682811.css.map": "/firdavsreactbot/static/css/main.51682811.css.map",
+    "main.b742b28d.js.map": "/firdavsreactbot/static/js/main.b742b28d.js.map",
     "787.359b1849.chunk.js.map": "/firdavsreactbot/static/js/787.359b1849.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.633479f8.css",
-    "static/js/main.b7fba324.js"
+    "static/css/main.51682811.css",
+    "static/js/main.b742b28d.js"
   ]
 }
