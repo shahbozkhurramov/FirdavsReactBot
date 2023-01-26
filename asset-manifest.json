@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/firdavsreactbot/static/css/main.51682811.css",
-    "main.js": "/firdavsreactbot/static/js/main.b742b28d.js",
+    "main.css": "/firdavsreactbot/static/css/main.03ed8c5f.css",
+    "main.js": "/firdavsreactbot/static/js/main.1340734a.js",
     "static/js/787.359b1849.chunk.js": "/firdavsreactbot/static/js/787.359b1849.chunk.js",
-    "static/media/firdavs.jpg": "/firdavsreactbot/static/media/firdavs.fadd60ed74885e421a26.jpg",
-    "static/media/arabic.jpg": "/firdavsreactbot/static/media/arabic.33db17102dad77ffeeb8.jpg",
-    "static/media/contactus.jpg": "/firdavsreactbot/static/media/contactus.76b6b637a0c48a28f90b.jpg",
+    "static/media/logo.png": "/firdavsreactbot/static/media/logo.2b212cbe0fc99d1bea2a.png",
+    "static/media/english.avif": "/firdavsreactbot/static/media/english.79223aa4860338404c9a.avif",
+    "static/media/math.avif": "/firdavsreactbot/static/media/math.2a9105df9de6a4cdc430.avif",
+    "static/media/contactus.jpg": "/firdavsreactbot/static/media/contactus.79404d2246a2aa21f554.jpg",
+    "static/media/arabic.avif": "/firdavsreactbot/static/media/arabic.4944e2f6d2e03164287f.avif",
+    "static/media/chemistry.avif": "/firdavsreactbot/static/media/chemistry.42e88f2c8a68ad6f6cfd.avif",
     "index.html": "/firdavsreactbot/index.html",
-    "main.51682811.css.map": "/firdavsreactbot/static/css/main.51682811.css.map",
-    "main.b742b28d.js.map": "/firdavsreactbot/static/js/main.b742b28d.js.map",
+    "main.03ed8c5f.css.map": "/firdavsreactbot/static/css/main.03ed8c5f.css.map",
+    "main.1340734a.js.map": "/firdavsreactbot/static/js/main.1340734a.js.map",
     "787.359b1849.chunk.js.map": "/firdavsreactbot/static/js/787.359b1849.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51682811.css",
-    "static/js/main.b742b28d.js"
+    "static/css/main.03ed8c5f.css",
+    "static/js/main.1340734a.js"
   ]
 }
