@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function Contactus() {
     const navigate = useNavigate();
-
     const navigateToHome = () => {
         navigate("/firdavsreactbot");
-    } 
+    }
+
+    const phoneCode = '+998';
 
     const nameRef = useRef<HTMLInputElement>(null);
     const phoneRef = useRef<HTMLInputElement>(null);
@@ -24,7 +25,7 @@ export default function Contactus() {
             valid = false;
         }
 
-        if(phoneRef.current?.value === "") {
+        if(phoneRef.current?.value === phoneCode) {
             ChangeVisibility("phoneError", "visible", "Telefon raqamingizni kiriting!");
             valid = false;
         }
@@ -51,6 +52,7 @@ export default function Contactus() {
     <>
     <div className="contact-form-container" data-aos="zoom-in-up" data-aos-duration="800">
       <form className="contact-form" id='contact-form'>
+      <img src={require('../Images/contactus.jpg')} alt="Course 1" className="contact-form-image" />
           <h2 className="form-title" data-aos="fade-down" data-aos-duration="1500">Biz bilan bog'laning</h2>
           <div className="form-field" data-aos="fade-up" data-aos-duration="1500">
               <label htmlFor="name">Ismingiz:</label>
@@ -59,7 +61,7 @@ export default function Contactus() {
           </div>
           <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
               <label htmlFor="phone">Telefon raqamingiz:</label>
-              <input type="tel" id="phone" ref={phoneRef} name="phone"/>
+              <input type="tel" id="phone" defaultValue={phoneCode} ref={phoneRef} name="phone"/>
               <div className="error-message" id="phoneError"></div>
           </div>
           <div className="form-field message-field" data-aos="fade-up" data-aos-duration="2000">
@@ -72,7 +74,6 @@ export default function Contactus() {
           </div>
       </form>
   </div>
-  <div className="success-message" id="SuccessMessage"></div>
   </>
   )
 }

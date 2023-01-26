@@ -8,29 +8,29 @@ export default function Home() {
       id: 1,
       name: "Arab tili",
       description: "Arab tilini 8 oy davomida biz bilan birga o'rganing...",
-      img: '../Images/arabic.jpg',
+      image: require('../Images/arabic.avif'),
       delayTime: 1000
     },
     {
       id: 2,
       name: "Ingliz tili",
-      description: "Something....",
-      img: '../Images/arabic.jpg',
-      delayTime: 1350
+      description: "If you want to learn English, you can learn it with us. Register now!",
+      image: require('../Images/english.avif'),
+      delayTime: 1200
     },
     {
       id: 3,
       name: "Kimyo",
       description: "Kimyo bilan tanishing",
-      img: '../Images/arabic.jpg',
-      delayTime: 1700
+      image: require('../Images/chemistry.avif'),
+      delayTime: 1400
     },
     {
       id: 4,
       name: "Matematika",
       description: "Matematika bilan tanishing",
-      img: '../Images/arabic.jpg',
-      delayTime: 2050
+      image: require('../Images/math.avif'),
+      delayTime: 1600
     }
   ]
 

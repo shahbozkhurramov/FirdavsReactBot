@@ -1,6 +1,5 @@
 .nav__toggle {
 	display: inline-block;
-	position: absolute;
 	z-index: 10;
 	padding: 0;
 	border: 0;
@@ -18,14 +17,14 @@
 	flex-direction: column;
 	justify-content: center;
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 8px;
+	top: 60px;
 	z-index: 5;
 	visibility: hidden;
 	list-style-type: none;
 	background-color: cadetblue;
-	width: 350px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
   }
   .nav__item {
 	opacity: 0;

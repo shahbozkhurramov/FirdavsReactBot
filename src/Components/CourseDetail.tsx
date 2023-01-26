@@ -6,31 +6,31 @@ const courses: CourseModel[] = [
     id: 1,
     name: "Arab tili",
     description: "Arab tilini 8 oy davomida biz bilan birga o'rganing...",
-    img: '../Images/arabic.jpg',
+    image: require('../Images/arabic.avif'),
     delayTime: 1000
   },
   {
     id: 2,
     name: "Ingliz tili",
     description: "Something....",
-    img: '../Images/arabic.jpg',
-    delayTime: 2000
+    image: require('../Images/english.avif'),
+    delayTime: 1350
   },
   {
     id: 3,
     name: "Kimyo",
     description: "Kimyo bilan tanishing",
-    img: '../Images/arabic.jpg',
-    delayTime: 2500
+    image: require('../Images/chemistry.avif'),
+    delayTime: 1700
   },
   {
     id: 4,
     name: "Matematika",
     description: "Matematika bilan tanishing",
-    img: '../Images/arabic.jpg',
-    delayTime: 3000
+    image: require('../Images/math.avif'),
+    delayTime: 2050
   }
-  ]
+]
 
 export default function CourseDetail() {
     let { id } = useParams<{ id: string }>();
@@ -68,7 +68,7 @@ export default function CourseDetail() {
       </div>
       <div className="tab-content">
         <div className="course-tab" id="course-tab">
-          <img className='detail-image' src={require('../Images/arabic.jpg')} alt='course'/>
+          <img className='detail-image' src={course?.image} alt='course'/>
           <h1>{course?.name}</h1>
           <p>{course?.description}</p>
           <ul>
@@ -78,7 +78,7 @@ export default function CourseDetail() {
           </ul>
         </div>
         <div className="instructor-tab" id="instructor-tab">
-          <img className='detail-image' src={require('../Images/arabic.jpg')} alt='course'/>
+          <img className='detail-image' src={course?.image} alt='course'/>
           <h2>O'qituvchi ismi</h2>
           <p>O'qituvchi haqida</p>
           <ul>
