@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/firdavsreactbot/static/css/main.03ed8c5f.css",
-    "main.js": "/firdavsreactbot/static/js/main.1340734a.js",
+    "main.css": "/firdavsreactbot/static/css/main.c9d6963b.css",
+    "main.js": "/firdavsreactbot/static/js/main.c2948a9e.js",
     "static/js/787.359b1849.chunk.js": "/firdavsreactbot/static/js/787.359b1849.chunk.js",
     "static/media/logo.png": "/firdavsreactbot/static/media/logo.2b212cbe0fc99d1bea2a.png",
     "static/media/english.avif": "/firdavsreactbot/static/media/english.79223aa4860338404c9a.avif",
@@ -10,12 +10,12 @@
     "static/media/arabic.avif": "/firdavsreactbot/static/media/arabic.4944e2f6d2e03164287f.avif",
     "static/media/chemistry.avif": "/firdavsreactbot/static/media/chemistry.42e88f2c8a68ad6f6cfd.avif",
     "index.html": "/firdavsreactbot/index.html",
-    "main.03ed8c5f.css.map": "/firdavsreactbot/static/css/main.03ed8c5f.css.map",
-    "main.1340734a.js.map": "/firdavsreactbot/static/js/main.1340734a.js.map",
+    "main.c9d6963b.css.map": "/firdavsreactbot/static/css/main.c9d6963b.css.map",
+    "main.c2948a9e.js.map": "/firdavsreactbot/static/js/main.c2948a9e.js.map",
     "787.359b1849.chunk.js.map": "/firdavsreactbot/static/js/787.359b1849.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03ed8c5f.css",
-    "static/js/main.1340734a.js"
+    "static/css/main.c9d6963b.css",
+    "static/js/main.c2948a9e.js"
   ]
 }
