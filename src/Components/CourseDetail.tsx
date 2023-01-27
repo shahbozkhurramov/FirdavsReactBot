@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
 import { CourseModel } from '../Models/CourseModel';
+
 const courses: CourseModel[] = [
   {
     id: 1,
@@ -44,8 +45,8 @@ export default function CourseDetail() {
       const instructorTabBtn = document.getElementById('instructor-tab-btn') as HTMLButtonElement;
       courseTab.style.display = 'block';
       instructorTab.style.display = 'none';
-      courseTabBtn.style.backgroundColor = '#ddd';
-      instructorTabBtn.style.backgroundColor = '#f2f2f2';
+      courseTabBtn.style.backgroundColor = 'rgb(192, 192, 192)';
+      instructorTabBtn.style.backgroundColor = '#e8e8e8';
     }
 
     function showInstructorTab(){
@@ -55,8 +56,8 @@ export default function CourseDetail() {
       const instructorTabBtn = document.getElementById('instructor-tab-btn') as HTMLButtonElement;
       courseTab.style.display = 'none';
       instructorTab.style.display = 'block';
-      courseTabBtn.style.backgroundColor = '#f2f2f2';
-      instructorTabBtn.style.backgroundColor = '#ddd';
+      courseTabBtn.style.backgroundColor = '#e8e8e8';
+      instructorTabBtn.style.backgroundColor = 'rgb(192, 192, 192)';
     }
 
     return (
@@ -69,7 +70,7 @@ export default function CourseDetail() {
       <div className="tab-content">
         <div className="course-tab" id="course-tab">
           <img className='detail-image' src={course?.image} alt='course'/>
-          <h1>{course?.name}</h1>
+          <h2>{course?.name}</h2>
           <p>{course?.description}</p>
           <ul>
             <li>Davomiylik: 8 oy</li>
