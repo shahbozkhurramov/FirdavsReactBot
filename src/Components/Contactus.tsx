@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Contactus() {
     const navigate = useNavigate();
     const navigateToHome = () => {
-        navigate("/firdavsreactbot");
+        navigate("/");
     }
 
     const phoneCode = '+998';

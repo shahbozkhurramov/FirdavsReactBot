@@ -5,7 +5,7 @@ export default function NotFound() {
     const navigate = useNavigate();
 
     const navigateToHome = () => {
-        navigate("/firdavsreactbot");
+        navigate("/");
     } 
   return (
     <div>

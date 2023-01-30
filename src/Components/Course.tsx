@@ -6,7 +6,7 @@ export default function Course({course}: {course: CourseModel}) {
   const navigate = useNavigate();
 
     const navigateToCourse = () => {
-        navigate(`/firdavsreactbot/courseDetail/${course.id}`);
+        navigate(`/courseDetail/${course.id}`);
     } 
   return (
     <div className="course" data-aos="fade-up" data-aos-duration={course.delayTime} onClick={navigateToCourse}>

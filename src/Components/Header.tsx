@@ -14,19 +14,19 @@ export default function Header() {
   }
   return (
     <div className="app-header">
-      <Link to="firdavsreactbot">
+      <Link to="">
       <img src={require('../Images/logo.png')} alt="App logo" className="app-logo" />
       </Link>
       <nav id="nav" className="nav">
           <ul className="nav__menu" id="menu" tabIndex={-1} aria-label="main navigation" hidden>
             <li className="nav__item">
-              <Link to="/firdavsreactbot" className="nav__link" onClick={toggleMenu}>Kurslar</Link>
+              <Link to="/" className="nav__link" onClick={toggleMenu}>Kurslar</Link>
             </li>
             <li className="nav__item">
-              <Link to="/firdavsreactbot/contactus" className="nav__link" onClick={toggleMenu}>Bog'lanish</Link>
+              <Link to="/contactus" className="nav__link" onClick={toggleMenu}>Bog'lanish</Link>
             </li>
             <li className="nav__item">
-              <Link to="/firdavsreactbot/aboutus" className="nav__link" onClick={toggleMenu}>Biz haqimizda</Link>
+              <Link to="/aboutus" className="nav__link" onClick={toggleMenu}>Biz haqimizda</Link>
             </li>
           </ul>
           <button className="nav__toggle" aria-expanded="false" aria-controls="menu" onClick={toggleMenu}>
