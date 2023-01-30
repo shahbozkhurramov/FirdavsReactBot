@@ -64,16 +64,16 @@ export default function Contactus() {
                 <div className="contact-card-item"><i className="fas fa-phone"></i> Telefon raqam: <a href="tel:+998909228267">+998 91 788-69-95 </a></div>
                 <div className="social-icons">
                     <a href="https://t.me/firdavs_talim" style={{color:'#2c83e0'}} target="_blank" rel='noreferrer'>
-                        <i className="fab fa-telegram fa"></i>
+                        <i className="fab fa-telegram"></i>
                     </a>
                     <a href="https://www.instagram.com/firdavs_talim" style={{color:'purple'}} target="_blank" rel='noreferrer'>
-                        <i className="fab fa-instagram fa"></i>
+                        <i className="fab fa-instagram"></i>
                     </a>
                     <a href="https://www.youtube.com/@firdavs_talim" style={{color:'red'}} target="_blank" rel='noreferrer'>
                         <i className="fab fa-fw fa-youtube"></i>
                     </a>
                     <a href="https://m.facebook.com" target="_blank" rel='noreferrer'>
-                        <i className="fab fa-facebook-square fa"></i>
+                        <i className="fab fa-facebook-square"></i>
                     </a>
                 </div>
             </div>
