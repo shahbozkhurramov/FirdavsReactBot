@@ -15,6 +15,7 @@
   .nav__menu {
 	display: flex;
 	flex-direction: column;
+	width: auto;
 	justify-content: center;
 	position: absolute;
 	left: 8px;
@@ -23,7 +24,6 @@
 	visibility: hidden;
 	list-style-type: none;
 	background-color: cadetblue;
-	width: 300px;
 	height: 300px;
   }
   .nav__item {

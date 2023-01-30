@@ -48,30 +48,58 @@ export default function Contactus() {
         element.style.visibility = visibility;
     }
 
+    function ScrollToInput(id: string) {
+        var element = document.getElementById(id) as HTMLInputElement;
+        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    }
+
   return (
     <>
     <div className="contact-form-container" data-aos="zoom-in-up" data-aos-duration="800">
       <form className="contact-form" id='contact-form'>
-      <img src={require('../Images/contactus.jpg')} alt="Course 1" className="contact-form-image" />
-          <h2 className="form-title" data-aos="fade-down" data-aos-duration="1500">Biz bilan bog'laning</h2>
-          <div className="form-field" data-aos="fade-up" data-aos-duration="1500">
-              <label htmlFor="name">Ismingiz:</label>
-              <input type="text" id="name" ref={nameRef} name="name"/>
-              <div className="error-message" id="nameError"></div>
-          </div>
-          <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
-              <label htmlFor="phone">Telefon raqamingiz:</label>
-              <input type="tel" id="phone" defaultValue={phoneCode} ref={phoneRef} name="phone"/>
-              <div className="error-message" id="phoneError"></div>
-          </div>
-          <div className="form-field message-field" data-aos="fade-up" data-aos-duration="2000">
-              <label htmlFor="message">Xabar:</label>
-              <textarea id="message" ref={messageRef} name="message"></textarea>
-              <div className="error-message" id="messageError"></div>
-          </div>
-          <div className="form-field">
-              <button className="submit-button" type='button' onClick={validateForm}>Yuborish</button>
-          </div>
+        <div className='our-location'>
+            <div className="contact-card-title">Bizning manzil</div>
+            <div className="contact-card-row">
+                <div className="contact-card-item">Manzil: <a href="https://yandex.com/maps/-/CCU55AxJpC">123 Main Street</a></div>
+                <div className="contact-card-item">Telefon raqam: <a href="tel:+998909228267">+998 91 788-69-95 </a></div>
+                <div className="social-icons">
+                    <a href="https://t.me/firdavs_talim" target="_blank" rel='noreferrer'>
+                        <i className="fab fa-telegram fa"></i>
+                    </a>
+                    <a href="https://t.me/firdavs_talim">
+                        <i className="fab fa-telegram fa"></i>
+                    </a>
+                    <a href="https://www.instagram.com/firdavs_talim" target="_blank" rel='noreferrer'>
+                        <i className="fab fa-instagram fa"></i>
+                    </a>
+                    <a href="https://www.instagram.com/firdavs_talim">
+                        <i className="fab fa-instagram fa"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel='noreferrer'>
+                        <i className="fab fa-fw fa-youtube"></i>
+                    </a>
+                    <a href="https://m.facebook.com/Firdavs-talim-103191505735452" target="_blank" rel='noreferrer'>
+                        <i className="fab fa-facebook-square fa"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 className="form-title" data-aos="fade-down" data-aos-duration="1500">Biz bilan bog'laning</h2>
+        <div className="form-field" data-aos="fade-up" data-aos-duration="1500">
+            <input type="text" id="name" ref={nameRef} placeholder="Ismingiz" name="name" onFocus={() => ScrollToInput("name")}/>
+            <div className="error-message" id="nameError"></div>
+        </div>
+        <div className="form-field" data-aos="fade-up" data-aos-duration="2000">
+            <input type="tel" id="phone" defaultValue={phoneCode} placeholder="Telefon raqamingiz" ref={phoneRef} name="phone" onFocus={() => ScrollToInput("phone")}/>
+            <div className="error-message" id="phoneError"></div>
+        </div>
+        <div className="form-field message-field" data-aos="fade-up" data-aos-duration="2000">
+            <textarea id="message" ref={messageRef} placeholder="Xabar..." name="message" onFocus={() => ScrollToInput("name")}></textarea>
+            <div className="error-message" id="messageError"></div>
+        </div>
+        <div className="form-field">
+            <button className="submit-button" type='button' onClick={validateForm}>Yuborish</button>
+        </div>
       </form>
   </div>
   </>
