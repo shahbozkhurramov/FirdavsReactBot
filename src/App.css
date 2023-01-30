@@ -131,9 +131,8 @@
   
   .form-title {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: var(--wordColor);
-  
   }
   
   .form-field {
@@ -210,6 +209,5 @@
 
   a{
 	text-decoration: none;
+	color: #0d4659;
   }
-
-  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');

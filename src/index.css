@@ -57,7 +57,7 @@
   }
   .nav__link:hover, .nav__link:focus {
 	outline: 0;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(44, 131, 224, 0.2);
   }
   
   .menuicon {
