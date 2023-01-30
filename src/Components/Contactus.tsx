@@ -50,7 +50,7 @@ export default function Contactus() {
 
     function ScrollToInput(id: string) {
         var element = document.getElementById(id) as HTMLInputElement;
-        element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+        element.scrollTop = element.scrollHeight;
     }
 
   return (
@@ -60,22 +60,16 @@ export default function Contactus() {
         <div className='our-location'>
             <div className="contact-card-title">Bizning manzil</div>
             <div className="contact-card-row">
-                <div className="contact-card-item">Manzil: <a href="https://yandex.com/maps/-/CCU55AxJpC">123 Main Street</a></div>
-                <div className="contact-card-item">Telefon raqam: <a href="tel:+998909228267">+998 91 788-69-95 </a></div>
+                <div className="contact-card-item"><i className="fas fa-map-marker-alt"></i> Manzil: <a href="https://yandex.com/maps/-/CCU55AxJpC">123 Main Street</a></div>
+                <div className="contact-card-item"><i className="fas fa-phone"></i> Telefon raqam: <a href="tel:+998909228267">+998 91 788-69-95 </a></div>
                 <div className="social-icons">
-                    <a href="https://t.me/firdavs_talim" target="_blank" rel='noreferrer'>
+                    <a href="https://t.me/firdavs_talim" style={{color:'blue'}} target="_blank" rel='noreferrer'>
                         <i className="fab fa-telegram fa"></i>
                     </a>
-                    <a href="https://t.me/firdavs_talim">
-                        <i className="fab fa-telegram fa"></i>
-                    </a>
-                    <a href="https://www.instagram.com/firdavs_talim" target="_blank" rel='noreferrer'>
+                    <a href="https://www.instagram.com/firdavs_talim" style={{color:'purple'}} target="_blank" rel='noreferrer'>
                         <i className="fab fa-instagram fa"></i>
                     </a>
-                    <a href="https://www.instagram.com/firdavs_talim">
-                        <i className="fab fa-instagram fa"></i>
-                    </a>
-                    <a href="https://www.youtube.com/" target="_blank" rel='noreferrer'>
+                    <a href="https://www.youtube.com/" style={{color:'red'}} target="_blank" rel='noreferrer'>
                         <i className="fab fa-fw fa-youtube"></i>
                     </a>
                     <a href="https://m.facebook.com/Firdavs-talim-103191505735452" target="_blank" rel='noreferrer'>
