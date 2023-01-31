@@ -31,13 +31,6 @@ export default function Home() {
       description: "Matematika bilan tanishing",
       image: require('../Images/math.avif'),
       delayTime: 1600
-    },
-    {
-      id: 5,
-      name: "Matematika",
-      description: "Matematika bilan tanishing",
-      image: require('../Images/math.avif'),
-      delayTime: 1800
     }
   ]
 
