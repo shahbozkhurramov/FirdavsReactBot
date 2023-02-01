@@ -12,10 +12,10 @@ function App() {
     <div className='app-container'>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/contactus" element={<Contactus/>}/>
-        <Route path="/aboutus" element={<AboutUs/>}/>
-        <Route path='/courseDetail/:id' element={<CourseDetail/>}/>
+        <Route path="/firdavsreactbot" element={<Home/>}/>
+        <Route path="/firdavsreactbot/contactus" element={<Contactus/>}/>
+        <Route path="/firdavsreactbot/aboutus" element={<AboutUs/>}/>
+        <Route path='/firdavsreactbot/courseDetail/:id' element={<CourseDetail/>}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
       </div>
